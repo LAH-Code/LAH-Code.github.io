@@ -8,7 +8,7 @@
       <link href="/posts/d87f7e0c.html"/>
       <url>/posts/d87f7e0c.html</url>
       
-        <content type="html"><![CDATA[<script type="math/tex; mode=display">\left[      \begin{matrix}      u_A \\      u_B \\      u_C \\      \end{matrix}  \right]=\left[      \begin{matrix}      R & 0 & 0 \\      0 & R & 0 \\      0 & 0 & R \\      \end{matrix}  \right]·\left[      \begin{matrix}      i_A \\      i_B \\      i_C \\      \end{matrix}  \right]+\frac{d}{dt}\left[      \begin{matrix}      \psi_A \\      \psi_B \\      \psi_C \\      \end{matrix}  \right]</script>]]></content>
+        <content type="html"><![CDATA[<script type="math/tex; mode=display">\pmb{u}_{3s}=\pmb{R}\pmb{i}_{3s}+\frac{d}{dt}\pmb{\psi}_{3s}  \tag{1-1}</script><script type="math/tex; mode=display">\left[      \begin{matrix}      u_A \\      u_B \\      u_C \\      \end{matrix}  \right]=\left[      \begin{matrix}      R & 0 & 0 \\      0 & R & 0 \\      0 & 0 & R \\      \end{matrix}  \right]·\left[      \begin{matrix}      i_A \\      i_B \\      i_C \\      \end{matrix}  \right]+\frac{d}{dt}\left[      \begin{matrix}      \psi_A \\      \psi_B \\      \psi_C \\      \end{matrix}  \right]</script>]]></content>
       
       
       
