@@ -84,7 +84,7 @@
       <link href="/posts/78d40b52.html"/>
       <url>/posts/78d40b52.html</url>
       
-        <content type="html"><![CDATA[<h1 id="不能有字吗"><a href="#不能有字吗" class="headerlink" title="不能有字吗"></a>不能有字吗</h1><script type="math/tex; mode=display">\pmb{u}_{3s}=\pmb{R}\pmb{i}_{3s}+\frac{d}{dt}\pmb{\psi}_{3s}  \tag{1-1}</script><script type="math/tex; mode=display">\left[      \begin{matrix}      u_A \\      u_B \\      u_C \\      \end{matrix}  \right]=\left[      \begin{matrix}      R & 0 & 0 \\      0 & R & 0 \\      0 & 0 & R \\      \end{matrix}  \right]·\left[      \begin{matrix}      i_A \\      i_B \\      i_C \\      \end{matrix}  \right]+\frac{d}{dt}\left[      \begin{matrix}      \psi_A \\      \psi_B \\      \psi_C \\      \end{matrix}  \right]</script>]]></content>
+        <content type="html"><![CDATA[<h1 id="section">2.27 ~ 3.5</h1><p>本周主要解决了hexo显示数学公式的问题，折腾了一天，重新开始学习PMSM电机驱动的东西，刚刚把基础数学模型看完，对电机模型不是很了解，不理解原理，找到了一本《ElectricMotors andDrives》据说讲的不错，下周看一下，这周周三补牙加上周四发烧了没有干什么事。</p><p>下周计划：看完永磁同步电机控制原理，看《Electric Motors andDrives》这本书，把电机模型原理搞懂一下，读懂电机控制代码，把eth的ros课程完成一下</p>]]></content>
       
       
       
