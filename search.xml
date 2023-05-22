@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Learn plan</title>
+      <link href="/posts/196fefdb.html"/>
+      <url>/posts/196fefdb.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="项目">项目</h1><ul><li><p>毕业设计舵轮小车<br />keil电调代码<br />rm-controls<br />控制一组舵轮<br />VESC电调源码编译 CAN通信</p></li><li><p>视触觉传感器</p></li></ul><h1 id="技能-工具">技能 &amp; 工具</h1><ul><li><p>stm32 电机<br />PMSM<br />CAN</p></li><li><p>C</p></li><li><p>C++<br />Cmake</p></li><li><p>Python</p></li><li><p>机器学习</p></li><li><p>深度学习</p></li><li><p><ahref="https://gdut-dynamic-x.github.io/missing-semester/2020/">计算机缺失的一课</a><br />shell<br />vim<br />shell工具和脚本<br />命令行环境<br />数据整理<br />安全和密码学<br />版本控制-git<br />元编程<br />大杂烩</p></li><li><p><ahref="https://rsl.ethz.ch/education-students/lectures/ros.html">ROS(ETH课程)</a><br />ROS-CAN</p></li><li><p>Llinux 嵌入式开发</p></li><li><p>数据结构<br />计算机组成原理<br />计算机网络<br />计算机操作结构</p></li><li><p>自动控制原理</p></li><li><p>SLAM</p></li></ul><h1 id="数学基础">数学基础</h1><ul><li>Matrix Analysis</li><li>Matrix-Computation</li><li>Numerical Analysis</li><li>Princeton Probability</li><li>Gaussian Processes for Machine Learning</li><li>Mathematics For Machine Learning</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决hexo-butterfly主题无法显示数学公式</title>
       <link href="/posts/cc441024.html"/>
       <url>/posts/cc441024.html</url>
@@ -84,7 +97,7 @@
       <link href="/posts/78d40b52.html"/>
       <url>/posts/78d40b52.html</url>
       
-        <content type="html"><![CDATA[<h1 id="section">2.27 ~ 3.5</h1><p>本周主要解决了hexo显示数学公式的问题，折腾了一天，重新开始学习PMSM电机驱动的东西，刚刚把基础数学模型看完，对电机模型不是很了解，不理解原理，找到了一本《ElectricMotors andDrives》据说讲的不错，下周看一下，这周周三补牙加上周四发烧了没有干什么事。</p><p>下周计划：看完永磁同步电机控制原理，看《Electric Motors andDrives》这本书，把电机模型原理搞懂一下，读懂电机控制代码，把eth的ros课程完成一下</p><h1 id="section-1">3.6~3.26</h1><p>停更了两个礼拜，这三个礼拜并没有实现目标<br>自己尝试搭PMSM的Simulink模型没有成功，但是在网上找到了别人做好的，大概理解了一下PMSM的控制原理，自己的控制和电机相关知识太缺乏<br>开始看队里的源码，不会用STM32，连一个函数都看不懂，从头学习了定时器、中断等内容，发现Chatgpt好像可以帮助看代码，它懂的比我多。。。<br>老师给了一个视触觉传感器的课题，找了一篇综述，最近一直在翻译这篇综述，刚刚把内容总结好了做成了PPT。<br>之后改成每天上传吧，又低效率过了好多天</p><p>下周开始学一下深度学习吧，后面做项目也要用，接着看电机的源码，ROS的课也得学一下，和加工商老板那问一下加工件的事，周六要汇报，这周希望能调好电机，每天看一个视触觉传感器的文献吧，每天了解一个实例(Gelsight、Tactip、OmniTact、Digit)</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="section">2.27 ~ 3.5</h1><p>本周主要解决了hexo显示数学公式的问题，折腾了一天，重新开始学习PMSM电机驱动的东西，刚刚把基础数学模型看完，对电机模型不是很了解，不理解原理，找到了一本《ElectricMotors andDrives》据说讲的不错，下周看一下，这周周三补牙加上周四发烧了没有干什么事。</p><p>下周计划：看完永磁同步电机控制原理，看《Electric Motors andDrives》这本书，把电机模型原理搞懂一下，读懂电机控制代码，把eth的ros课程完成一下</p><h1 id="section-1">3.6~3.26</h1><p>停更了两个礼拜，这三个礼拜并没有实现目标<br>自己尝试搭PMSM的Simulink模型没有成功，但是在网上找到了别人做好的，大概理解了一下PMSM的控制原理，自己的控制和电机相关知识太缺乏<br>开始看队里的源码，不会用STM32，连一个函数都看不懂，从头学习了定时器、中断等内容，发现Chatgpt好像可以帮助看代码，它懂的比我多。。。<br>老师给了一个视触觉传感器的课题，找了一篇综述，最近一直在翻译这篇综述，刚刚把内容总结好了做成了PPT。<br>之后改成每天上传吧，又低效率过了好多天</p><p>下周开始学一下深度学习吧，后面做项目也要用，接着看电机的源码，ROS的课也得学一下，和加工商老板那问一下加工件的事，周六要汇报，这周希望能调好电机，每天看一个视触觉传感器的文献吧，每天了解一个实例(Gelsight、Tactip、OmniTact、Digit)</p><h1 id="section-2">5.22 ~5.28</h1><ul><li>stm32 can</li><li>计算机缺失的一课</li><li>ROS(eth)<br>ros usb-can</li></ul>]]></content>
       
       
       
