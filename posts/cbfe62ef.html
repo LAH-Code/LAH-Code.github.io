@@ -1,12 +1,12 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Papers_reading | LAH BLOG</title><meta name="author" content="L A H"><meta name="copyright" content="L A H"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Mobile manipulators \(N^2\)\(M^2\): Learning Navigation for Arbitrary Mobile Manipulation Motions in Unseen and Dynamic Environments —— TRO 2023 项目地址http:&#x2F;&#x2F;mobile-rl.cs.uni-freiburg.de&#x2F; ### 整体思路">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Papers_reading | LAH BLOG</title><meta name="author" content="L A H"><meta name="copyright" content="L A H"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Mobile manipulators \(N^2\)\(M^2\) : Learning Navigation for Arbitrary Mobile Manipulation Motions in Unseen and Dynamic Environments —— TRO 2023 项目地址http:&#x2F;&#x2F;mobile-rl.cs.uni-freiburg.de&#x2F; 整体思路">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Papers_reading">
 <meta property="og:url" content="http://example.com/posts/cbfe62ef.html">
 <meta property="og:site_name" content="LAH BLOG">
-<meta property="og:description" content="Mobile manipulators \(N^2\)\(M^2\): Learning Navigation for Arbitrary Mobile Manipulation Motions in Unseen and Dynamic Environments —— TRO 2023 项目地址http:&#x2F;&#x2F;mobile-rl.cs.uni-freiburg.de&#x2F; ### 整体思路">
+<meta property="og:description" content="Mobile manipulators \(N^2\)\(M^2\) : Learning Navigation for Arbitrary Mobile Manipulation Motions in Unseen and Dynamic Environments —— TRO 2023 项目地址http:&#x2F;&#x2F;mobile-rl.cs.uni-freiburg.de&#x2F; 整体思路">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-04T09:40:54.000Z">
-<meta property="article:modified_time" content="2023-12-18T12:19:49.501Z">
+<meta property="article:modified_time" content="2024-02-01T06:43:12.938Z">
 <meta property="article:author" content="L A H">
 <meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/posts/cbfe62ef"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
@@ -50,7 +50,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-12-18 20:19:49'
+  postUpdate: '2024-02-01 14:43:12'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -139,23 +139,23 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">LAH BLOG</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Papers_reading</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-04T09:40:54.000Z" title="发表于 2023-12-04 17:40:54">2023-12-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-18T12:19:49.501Z" title="更新于 2023-12-18 20:19:49">2023-12-18</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Papers_reading"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="mobile-manipulators">Mobile manipulators</h1>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">LAH BLOG</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Papers_reading</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-04T09:40:54.000Z" title="发表于 2023-12-04 17:40:54">2023-12-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-01T06:43:12.938Z" title="更新于 2024-02-01 14:43:12">2024-02-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Papers_reading"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="mobile-manipulators">Mobile manipulators</h1>
 <h2
 id="n2m2-learning-navigation-for-arbitrary-mobile-manipulation-motions-in-unseen-and-dynamic-environments-tro-2023"><span
 class="math inline">\(N^2\)</span><span
-class="math inline">\(M^2\)</span>: Learning Navigation for Arbitrary
+class="math inline">\(M^2\)</span> : Learning Navigation for Arbitrary
 Mobile Manipulation Motions in Unseen and Dynamic Environments —— TRO
 2023</h2>
 <p>项目地址<a
-target="_blank" rel="noopener" href="http://mobile-rl.cs.uni-freiburg.de/">http://mobile-rl.cs.uni-freiburg.de/</a>
-### 整体思路</p>
+target="_blank" rel="noopener" href="http://mobile-rl.cs.uni-freiburg.de/">http://mobile-rl.cs.uni-freiburg.de/</a></p>
+<h3 id="整体思路">整体思路</h3>
 <p><img src="https://s2.loli.net/2023/12/06/LjDSpZ4Jid6Yuo3.jpg"/></p>
 <ol type="1">
 <li>生成下一步期望的末端执行器的动作<br />
 </li>
 <li>RL Agent 观测期望的动作，一个本地占用率地图（local occupancy
 map）和机器人状态</li>
-<li>生成底座，移动速度和躯干关节的控制</li>
+<li>生成底盘运动速度，躯干关节速度和末端执行器运动速度范数</li>
 <li>手臂关节的逆运动学解算</li>
 </ol>
 <p>Agent的目标是通过最大化奖励确保末端执行器的动作保持运动学的可行性</p>
@@ -174,7 +174,7 @@ class="math inline">\(N^2M^2\)</span>将这种分解扩展到了复杂障碍物�
 <li><p>基于规划的方法(planning)具有渐进最优保证性，但配置空间(Configuration
 space)过大，规划时间长，对于动态环境通常需要多次重新规划</p></li>
 <li><p>MPC明确定义和优化一系列碰撞和符合期望的约束，最近在移动操纵方面取得了良好的成果。但是计算代价较大，而且在目标矛盾的时候陷入困境</p></li>
-<li><p>基于学习的方法直接从高维观测中学习并且非常适合位置环境，但是这种方法也需要限制工作空间或者依赖于专家示范。学习到的行为是适用于特定任务的，因此新的任务就需要重新训练学习</p></li>
+<li><p>基于学习的方法直接从高维观测中学习并且非常适合未知环境，但是这种方法也需要限制工作空间或者依赖于专家示范。学习到的行为是适用于特定任务的，因此新的任务就需要重新训练学习</p></li>
 </ul>
 <p>这篇文章将移动操作机器人的问题假设为一个目标条件强化学习问题，RL
 agent
@@ -193,13 +193,13 @@ approach)来学习移动操作机器人在非结构化障碍地图上和任意�
 manipulation)</strong>：由于在联合空间规划的困难，许多之前的方法将自己限制为底座的连续运动，然后用手臂进行静态操作<br />
 </li>
 <li><strong>规划(plannning)</strong>：为保证在移动操作任务中的运动学可行性，基于规划的方法在关节空间为机器人规划路径并且因此只能探索运动学可行的路径。
-基于采样的方法(例如RRT)在高位空间中表现不错但是增加配置空间和环境会导致长的规划时间。在未知或动态环境中的操作会导致消耗巨大的重规划。
+基于采样的方法(例如RRT)在高维空间中表现不错但是增加配置空间和环境会导致长的规划时间。在未知或动态环境中的操作会导致消耗巨大的重规划。
 虽然某些约束可以很好地合并到运动规划中，但合并任意的末端执行器约束很困难，通常需要专业知识和特定于任务的适应。
 相比之下，我们的方法可以几乎立即对动态变化做出反应，提供了一种自然的方式来合并未探索的环境，并且可以直接应用于任意
 EE 运动。<br />
 </li>
 <li><strong>逆可达性图(Inverse Reachability maps)</strong>
-在给定任务约束时能够找到好的机器人底座定位，随后任务被稳定求解。与规划方法的组合是存在的，但将运动学可行性约束集成到任务空间移动机器人运动规划中仍然是一个难题。</li>
+在给定任务约束时能够找到好的机器人底盘定位，随后任务被稳定求解。与规划方法的组合是存在的，但将运动学可行性约束集成到任务空间移动机器人运动规划中仍然是一个难题。</li>
 <li><strong>优化控制(Optimal Control)</strong>
 在需要机械臂与底座同时移动的复杂任务中取得了很好的成果。基于MPC的方法证明了在整身控制任务中有很好的表现。
 约束被明确地纳入目标函数中，并在（通常是固定的）部署范围内进行优化。
@@ -249,6 +249,13 @@ target="_blank" rel="noopener" href="https://www.pair.toronto.edu/articulated-mm
 * 第二阶段
 助理为中心(agent-centric)的规划器，将全身动作控制当作一个最优控制问题，即使在有移动障碍的场景中也能确保生成的规划的安全</p>
 <h2
+id="consolidating-kinematic-models-to-promote-coordinated-mobile-manipulations-iros2021">Consolidating
+Kinematic Models to Promote Coordinated Mobile Manipulations ——
+IROS2021</h2>
+<p>项目地址：<a
+target="_blank" rel="noopener" href="https://sites.google.com/view/iros2021-vkc/home/vkc-motion">https://sites.google.com/view/iros2021-vkc/home/vkc-motion</a>
+朱松纯</p>
+<h2
 id="reactive-planning-for-mobile-manipulation-tasks-in-unexplored-semantic-environments-icra-2021">Reactive
 Planning for Mobile Manipulation Tasks in Unexplored Semantic
 Environments —— ICRA 2021</h2>
@@ -273,32 +280,114 @@ LTL
 <h3 id="introduction-1">Introduction</h3>
 <p>目前已有的算法扩展性不好，而且大部分面向已知环境，应用有限，因此需要在线重规划。</p>
 <h2
-id="consolidating-kinematic-models-to-promote-coordinated-mobile-manipulations-iros2021">Consolidating
-Kinematic Models to Promote Coordinated Mobile Manipulations ——
-IROS2021</h2>
-<p>项目地址：<a
-target="_blank" rel="noopener" href="https://sites.google.com/view/iros2021-vkc/home/vkc-motion">https://sites.google.com/view/iros2021-vkc/home/vkc-motion</a>
-朱松纯 ## An Architecture for Reactive Mobile Manipulation On-The-Move
-——ICRA2023</p>
+id="an-architecture-for-reactive-mobile-manipulation-on-the-move-icra2023">An
+Architecture for Reactive Mobile Manipulation On-The-Move
+——ICRA2023</h2>
 <p>项目地址： <a
 target="_blank" rel="noopener" href="https://benburgesslimerick.github.io/ManipulationOnTheMove/">https://benburgesslimerick.github.io/ManipulationOnTheMove/</a>
 （Robotics Toolbox的作者Peter Corke）</p>
+<p><img src="https://s2.loli.net/2023/12/20/MJsVRduHLNOD8ey.png"/></p>
+<p>1）移动底盘控制器：底盘控制器负责驱动移动底盘让机器人经过进入操作目标范围并且在高水平任务中走向下一目标。输入机器人当前的位置，目标和下一个目标，底盘控制器为底盘计算出一个期望的速度并且估计进入目标操作范围的时间
+2）MotM到达器：当机器人靠近目标时，到达器负责计算末端执行器速度命令让末端执行器在机器人可到达的范围内到达目标。到达器估算目标进入操作范围的时间并且将其作为输入来协调末端执行器的到达
+3）最终阶段任务控制器：当靠近目标时，机械臂控制从到达器变为最终阶段控制器，这个控制器计算末端执行器速度来完成任务。例子包括控制末端执行器到一个目标并且执行抓取，放置一个物体或者按一个按钮。
+4）机械臂/底盘冗余解决控制器：冗余解决控制器负责将期望末端执行器和地盘速度转化为机器人的关节速度。这个模块保证机械臂和底盘的协同运动，并且可以充分利用冗余自由度完成次要任务，例如避障或者最大化可操作性。</p>
 <h3 id="abstract-1">Abstract</h3>
-<p>本文提出了一种移动操作的通用架构，用于在高级任务中机器人底盘向下一个目标运动时进行反应式移动操作。在移动中执行任务减少了使用的时间。操作器的反应式控制能够以不可预测的动作抓取物体，与开环，基于轨迹的规划方法相比，提高了应对感知错误、环境干扰和机器人控制不准确的鲁棒性。</p>
+<p>本文提出了一种移动操作的通用架构，用于在高级任务中机器人底盘向下一个目标运动时进行反应式移动操作。在移动中执行任务减少了使用的时间。操作器的反应式控制能够以不可预测的动作抓取物体，与开环，基于轨迹的规划方法相比，提高了应对感知错误、环境干扰和机器人控制不准确的鲁棒性（反应式控制在复杂动态环境中鲁棒性更强）。本工作在静态动态物体的捡起和放置任务中均进行了实验。<br />
+本实验减少了任务时间，提升了可靠性、优雅和可预测性</p>
+<h3 id="introduction-2">Introduction</h3>
+<p>早先移动操作机器人的控制结构将其视为两个分别的系统，目前底盘和操作臂的联合控制使运动更快、更优雅。然而这些控制器仅仅考虑当前的目标。在由血多步骤组成的任务中（例如移动拾取和放置操作），当底盘向下一个目标移动的过程中进行操作任务会使速度明显提升。在移动中执行任务会使运动更快更优雅。<br />
+现有的移动中的操作控制方法是基于规划的轨迹的开环控制方法。在受控的环境中这个方法可以产生最优的结果。然而当机器人必须对意外的物体运动、环境干扰、不精确的感知和机器人控制，规划方法导致的不可靠系统具有鲁棒性时。鲁棒性的表现需要闭环，反应式控制。<br />
+我们提出了一个新的反应式移动中移动操作控制架构。这个架构在真实世界的机器人抓取和放置静态和动态物体任务中均证明了有效性。我们提出的方法在速度、可靠性和优美程度上与现在的规划和反应式控制方法进行了对比。它的通用性通过仿真在多种不同的移动操作机器人上进行了验证。
+我们的结果证明反应式在移动中完成任务会得到比现在的反应式方法更快更优美的运动，比基于规划的方法表现更有鲁棒性。这个方法对于感知，定位和里程计误差具有鲁棒性。我们的方法也允许在底盘运动的同时抓取移动物体（这一任务使用现存的方法几乎不可能实现）。我们提出的架构对许多移动操作设计和任务具有普适性。<br />
+这一工作的贡献有：<br />
+1) 一种用于移动操作的架构，具有对环境变化作出反应的连续底盘运动能力 2)
+应用一个抓取和放置任务的架构以证明当整个机器人在运动中时抓取不可预测的移动物体的能力
+3) 定量分析真实世界中系统在120种实验（包括和基线比较）的表现 4)
+通过在一系列仿真这一架构在机器人的应用证明结构的普适性。</p>
+<h3 id="realted-works">Realted Works</h3>
+<p>目前的移动操作控制结构可以看作一个从纯规划（轨迹在任务刚开始的时候就计算出来，之后在开环控制下运行）到纯粹的反应式控制（机器人仅仅对当前状态作出反应并且不考虑人物的长期计划）的光谱。在这个光谱的中间是有些模糊的，控制器可以将全局规划器与局部反应控制器结合起来。我们认为反应式控制器是一种能够实时响应机器人和环境状态意外变化的控制器。</p>
+<ul>
+<li><strong>底盘-操作器按顺序控制</strong>
+基于规划的方法适合用在可控的环境中，采用反应式控制方法可以提升系统的鲁棒性但是这种顺序架构由于需要机械臂操作前让底盘停下从而限制了机器人的速度和优雅性。</li>
+<li><strong>移动操作协同控制</strong>
+许多规划方法被证明可以为高自由度的移动操作机器人生成轨迹。规划的方法可以生成避障、优化的路径，这以很高的计算时间作为代价。因此，这些系统不适合预先适应高动态的环境，意料之外的改变需要频繁的重规划。尽管反应式控制不能声称具有最优性，它们非常适合动态环境。最近的工作提出多种反应式联合控制移动操作机器人的方法。</li>
+<li><strong>移动中进行操作</strong>
+现存的移动操作机器人控制架构能够快速，优雅地完成独立的任务。然而，这些方法通常没有考虑操作如何适应更高级别的任务。例如，在一个抓取并且放置任务中，这些方法将抓取和放置看作两个独立的动作。在这个例子中，在底盘保持向目标运动的同时完成抓取任务会显著减少执行时间。移动机器人在运动中的动作实现在人类看来更加“自然”并且是“可预测的”。<br />
+已经提出了几种通过规划底盘和机械手的协调轨迹来实现移动操作的方法。这些方法生成时间最优，优雅的运动。然而，在所有这些工作中，规划轨迹的开环执行导致了在高不确定性和许多干扰的环境中的不可靠表现。<em>Go
+fetch!-dynamic grasps using Boston Dynamics Spot with external robotic
+arm ——
+RAL2021</em>提到当感知不准确或者机器人底盘遇到了意料之外的干扰时他们的规划系统会失败。这些系统不能在高动态环境中（例如抓取移动物体）进行操作。<br />
+移动中进行操作的反应式方法可以实现鲁棒性，快速并且优雅的多步骤任务实现（例如在动态环境中抓取放置物体）。本篇文章之前还没有实现在移动中进行反应式操作。</li>
+</ul>
+<h3 id="manipulation-on-the-move-architecture">Manipulation On-The-Move
+Architecture</h3>
+<p>我们的系统同时考虑高水平任务的目前和接下来的目标，丝滑连接子任务。这是通过一个通用架构实现的，该架构将控制分成多个模块以实现动态反应操作(MotM)。该架构适合许多机器人设计，仅仅需要机器人提供速度控制界面，关节角度传感和点云信息，然而其他可以使用末端执行器速度控制的任务也可以用相同的架构实现。这种任务包括按下按钮、轻按开关或转动手柄。
+* <strong>MotM Control Archtitecture</strong>
+MotM控制器有四个主要组成部分，其实现可能根据机器人或任务的具体情况而有所不同。每一部分的主要作用罗列如下：
+1）移动底盘控制器：底盘控制器负责驱动移动底盘让机器人经过进入操作目标范围并且在高水平任务中走向下一目标。输入机器人当前的位置，目标和下一个目标，底盘控制器为底盘计算出一个期望的速度并且估计进入目标操作范围的时间
+2）MotM到达器：当机器人靠近目标时，到达器负责计算末端执行器速度命令让末端执行器在机器人可到达的范围内到达目标。到达器估算目标进入操作范围的时间并且将其作为输入来协调末端执行器的到达
+3）最终阶段任务控制器：当靠近目标时，机械臂控制从到达器变为最终阶段控制器，这个控制器计算末端执行器速度来完成任务。例子包括控制末端执行器到一个目标并且执行抓取，放置一个物体或者按一个按钮。
+4）机械臂/底盘冗余解决控制器：冗余解决控制器负责将期望末端执行器和地盘速度转化为机器人的关节速度。这个模块保证机械臂和底盘的协同运动，并且可以充分利用冗余自由度完成次要任务，例如避障或者最大化可操作性。</p>
+<h3 id="实验指标">实验指标</h3>
+<ol type="1">
+<li>任务时间(t)：从机器人运动开始到放下物体的时间</li>
+<li>成功率(sr)：10次实验的成功率</li>
+<li>每小时平均运输量(MTPH)：每小时平均抓取量时静态抓取系统广泛使用的指标
+(<em>Guest editorial open discussion of robot grasping benchmarks,
+protocols, and
+metrics</em>)。这个指标的计算方式为每次尝试时间的倒数乘以成功概率并且对有关系统速度和可靠性的信息进行编码。我们引入了MTPH，它描述了连续运行一小时内成功执行任务的预期次数。</li>
+<li>优雅性：最大加速度(<span
+class="math inline">\(max|\vec{v}|\)</span>)被当作一种优雅性的度量。我们也引入了末端执行器平均加速度大小(<span
+class="math inline">\(\langle|\vec{v}|\rangle\)</span>)。</li>
+</ol>
 <h2 id="a-holistic-approach-to-reactive-mobile-manipulation-ral2022">A
 Holistic Approach to Reactive Mobile Manipulation ——RAL2022</h2>
 <p>项目地址：<a
 target="_blank" rel="noopener" href="https://jhavl.github.io/holistic/">https://jhavl.github.io/holistic/</a>
 (Robotics Toolbox的作者)</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">L A H</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/posts/cbfe62ef.html">http://example.com/posts/cbfe62ef.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">LAH BLOG</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/30c6e71.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Missing Semester</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">L A H</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mobile-manipulators"><span class="toc-number">1.</span> <span class="toc-text">Mobile manipulators</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#n2m2-learning-navigation-for-arbitrary-mobile-manipulation-motions-in-unseen-and-dynamic-environments-tro-2023"><span class="toc-number">1.1.</span> <span class="toc-text">\(N^2\)\(M^2\): Learning Navigation for Arbitrary
+<h2
+id="omega2-optimal-hierarchical-planner-for-object-search-in-large-environments-via-mobile-manipulation-iros2022"><span
+class="math inline">\(\Omega^2\)</span> : Optimal Hierarchical Planner
+for Object Search in Large Environments via Mobile Manipulation ——
+IROS2022</h2>
+<h2
+id="optimal-order-pick-and-place-of-objects-in-cluttered-scene-by-a-mobile-manipulator-ral2021">Optimal
+Order Pick-and-Place of Objects in Cluttered Scene by a Mobile
+Manipulator —— RAL2021</h2>
+<h2
+id="kineverse-a-symbolic-articulation-model-framework-for-model-agnostic-mobile-manipulation-ral2022">Kineverse:
+A Symbolic Articulation Model Framework for Model-Agnostic Mobile
+Manipulation —— RAL2022</h2>
+<h2
+id="online-next-best-view-planner-for-3d-exploration-and-inspection-with-a-mobile-manipulator-robot-ral2022">Online
+Next-Best-View Planner for 3D-Exploration and Inspection With a Mobile
+Manipulator Robot —— RAL2022</h2>
+<h2
+id="motion-planning-of-mobile-manipulator-for-navigation-including-door-traversal-ral2023">Motion
+Planning of Mobile Manipulator for Navigation Including Door Traversal
+—— RAL2023</h2>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">L A H</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/posts/cbfe62ef.html">http://example.com/posts/cbfe62ef.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">LAH BLOG</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/30c6e71.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Missing Semester</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">L A H</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mobile-manipulators"><span class="toc-number">1.</span> <span class="toc-text">Mobile manipulators</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#n2m2-learning-navigation-for-arbitrary-mobile-manipulation-motions-in-unseen-and-dynamic-environments-tro-2023"><span class="toc-number">1.1.</span> <span class="toc-text">\(N^2\)\(M^2\) : Learning Navigation for Arbitrary
 Mobile Manipulation Motions in Unseen and Dynamic Environments —— TRO
-2023</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#abstract"><span class="toc-number">1.1.1.</span> <span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#introduction"><span class="toc-number">1.1.2.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#related-work"><span class="toc-number">1.1.3.</span> <span class="toc-text">Related Work</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#conclusion"><span class="toc-number">1.1.4.</span> <span class="toc-text">Conclusion</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#learning-kinematic-feasibility-for-mobile-manipulation-through-deep-reinforcement-learning-ral2021"><span class="toc-number">1.2.</span> <span class="toc-text">Learning
+2023</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.1.</span> <span class="toc-text">整体思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#abstract"><span class="toc-number">1.1.2.</span> <span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#introduction"><span class="toc-number">1.1.3.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#related-work"><span class="toc-number">1.1.4.</span> <span class="toc-text">Related Work</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#conclusion"><span class="toc-number">1.1.5.</span> <span class="toc-text">Conclusion</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#learning-kinematic-feasibility-for-mobile-manipulation-through-deep-reinforcement-learning-ral2021"><span class="toc-number">1.2.</span> <span class="toc-text">Learning
 Kinematic Feasibility for Mobile Manipulation Through Deep Reinforcement
 Learning ——RAL2021</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#articulated-object-interaction-in-unknown-scenes-with-whole-body-mobile-manipulation-iros2022"><span class="toc-number">1.3.</span> <span class="toc-text">Articulated
 Object Interaction in Unknown Scenes with Whole-Body Mobile Manipulation
-—— IROS2022</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#reactive-planning-for-mobile-manipulation-tasks-in-unexplored-semantic-environments-icra-2021"><span class="toc-number">1.4.</span> <span class="toc-text">Reactive
-Planning for Mobile Manipulation Tasks in Unexplored Semantic
-Environments —— ICRA 2021</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E6%95%B4%E4%BD%93%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.4.1.</span> <span class="toc-text">方法整体介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#introduction-1"><span class="toc-number">1.4.2.</span> <span class="toc-text">Introduction</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#consolidating-kinematic-models-to-promote-coordinated-mobile-manipulations-iros2021"><span class="toc-number">1.5.</span> <span class="toc-text">Consolidating
+—— IROS2022</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#consolidating-kinematic-models-to-promote-coordinated-mobile-manipulations-iros2021"><span class="toc-number">1.4.</span> <span class="toc-text">Consolidating
 Kinematic Models to Promote Coordinated Mobile Manipulations ——
-IROS2021</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#abstract-1"><span class="toc-number">1.5.1.</span> <span class="toc-text">Abstract</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#a-holistic-approach-to-reactive-mobile-manipulation-ral2022"><span class="toc-number">1.6.</span> <span class="toc-text">A
-Holistic Approach to Reactive Mobile Manipulation ——RAL2022</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/cbfe62ef.html" title="Papers_reading"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Papers_reading"/></a><div class="content"><a class="title" href="/posts/cbfe62ef.html" title="Papers_reading">Papers_reading</a><time datetime="2023-12-04T09:40:54.000Z" title="发表于 2023-12-04 17:40:54">2023-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/30c6e71.html" title="Missing Semester"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Missing Semester"/></a><div class="content"><a class="title" href="/posts/30c6e71.html" title="Missing Semester">Missing Semester</a><time datetime="2023-06-23T08:11:05.000Z" title="发表于 2023-06-23 16:11:05">2023-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/0.html" title="ROS(ETHZ)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ROS(ETHZ)"/></a><div class="content"><a class="title" href="/posts/0.html" title="ROS(ETHZ)">ROS(ETHZ)</a><time datetime="2023-06-06T15:00:15.485Z" title="发表于 2023-06-06 23:00:15">2023-06-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/196fefdb.html" title="Learn plan"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Learn plan"/></a><div class="content"><a class="title" href="/posts/196fefdb.html" title="Learn plan">Learn plan</a><time datetime="2023-05-22T07:39:23.000Z" title="发表于 2023-05-22 15:39:23">2023-05-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/cc441024.html" title="解决hexo-butterfly主题无法显示数学公式"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解决hexo-butterfly主题无法显示数学公式"/></a><div class="content"><a class="title" href="/posts/cc441024.html" title="解决hexo-butterfly主题无法显示数学公式">解决hexo-butterfly主题无法显示数学公式</a><time datetime="2023-03-01T12:41:19.000Z" title="发表于 2023-03-01 20:41:19">2023-03-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By L A H</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+IROS2021</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#reactive-planning-for-mobile-manipulation-tasks-in-unexplored-semantic-environments-icra-2021"><span class="toc-number">1.5.</span> <span class="toc-text">Reactive
+Planning for Mobile Manipulation Tasks in Unexplored Semantic
+Environments —— ICRA 2021</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E6%95%B4%E4%BD%93%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.5.1.</span> <span class="toc-text">方法整体介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#introduction-1"><span class="toc-number">1.5.2.</span> <span class="toc-text">Introduction</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#an-architecture-for-reactive-mobile-manipulation-on-the-move-icra2023"><span class="toc-number">1.6.</span> <span class="toc-text">An
+Architecture for Reactive Mobile Manipulation On-The-Move
+——ICRA2023</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#abstract-1"><span class="toc-number">1.6.1.</span> <span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#introduction-2"><span class="toc-number">1.6.2.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#realted-works"><span class="toc-number">1.6.3.</span> <span class="toc-text">Realted Works</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#manipulation-on-the-move-architecture"><span class="toc-number">1.6.4.</span> <span class="toc-text">Manipulation On-The-Move
+Architecture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E6%8C%87%E6%A0%87"><span class="toc-number">1.6.5.</span> <span class="toc-text">实验指标</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#a-holistic-approach-to-reactive-mobile-manipulation-ral2022"><span class="toc-number">1.7.</span> <span class="toc-text">A
+Holistic Approach to Reactive Mobile Manipulation ——RAL2022</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#omega2-optimal-hierarchical-planner-for-object-search-in-large-environments-via-mobile-manipulation-iros2022"><span class="toc-number">1.8.</span> <span class="toc-text">\(\Omega^2\) : Optimal Hierarchical Planner
+for Object Search in Large Environments via Mobile Manipulation ——
+IROS2022</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#optimal-order-pick-and-place-of-objects-in-cluttered-scene-by-a-mobile-manipulator-ral2021"><span class="toc-number">1.9.</span> <span class="toc-text">Optimal
+Order Pick-and-Place of Objects in Cluttered Scene by a Mobile
+Manipulator —— RAL2021</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#kineverse-a-symbolic-articulation-model-framework-for-model-agnostic-mobile-manipulation-ral2022"><span class="toc-number">1.10.</span> <span class="toc-text">Kineverse:
+A Symbolic Articulation Model Framework for Model-Agnostic Mobile
+Manipulation —— RAL2022</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#online-next-best-view-planner-for-3d-exploration-and-inspection-with-a-mobile-manipulator-robot-ral2022"><span class="toc-number">1.11.</span> <span class="toc-text">Online
+Next-Best-View Planner for 3D-Exploration and Inspection With a Mobile
+Manipulator Robot —— RAL2022</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#motion-planning-of-mobile-manipulator-for-navigation-including-door-traversal-ral2023"><span class="toc-number">1.12.</span> <span class="toc-text">Motion
+Planning of Mobile Manipulator for Navigation Including Door Traversal
+—— RAL2023</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/cbfe62ef.html" title="Papers_reading"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Papers_reading"/></a><div class="content"><a class="title" href="/posts/cbfe62ef.html" title="Papers_reading">Papers_reading</a><time datetime="2023-12-04T09:40:54.000Z" title="发表于 2023-12-04 17:40:54">2023-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/30c6e71.html" title="Missing Semester"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Missing Semester"/></a><div class="content"><a class="title" href="/posts/30c6e71.html" title="Missing Semester">Missing Semester</a><time datetime="2023-06-23T08:11:05.000Z" title="发表于 2023-06-23 16:11:05">2023-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/0.html" title="ROS(ETHZ)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ROS(ETHZ)"/></a><div class="content"><a class="title" href="/posts/0.html" title="ROS(ETHZ)">ROS(ETHZ)</a><time datetime="2023-06-06T15:00:15.485Z" title="发表于 2023-06-06 23:00:15">2023-06-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/196fefdb.html" title="Learn plan"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Learn plan"/></a><div class="content"><a class="title" href="/posts/196fefdb.html" title="Learn plan">Learn plan</a><time datetime="2023-05-22T07:39:23.000Z" title="发表于 2023-05-22 15:39:23">2023-05-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/cc441024.html" title="解决hexo-butterfly主题无法显示数学公式"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解决hexo-butterfly主题无法显示数学公式"/></a><div class="content"><a class="title" href="/posts/cc441024.html" title="解决hexo-butterfly主题无法显示数学公式">解决hexo-butterfly主题无法显示数学公式</a><time datetime="2023-03-01T12:41:19.000Z" title="发表于 2023-03-01 20:41:19">2023-03-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By L A H</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
